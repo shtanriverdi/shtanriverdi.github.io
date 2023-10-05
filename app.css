@@ -16,6 +16,23 @@ textarea {
     font-size: 1rem;
 }
 
+.green {
+    color: green;
+    text-shadow: 0px 0px 40px #8bff00;
+}
+
+.svgShadow {
+    color: green;
+    filter: drop-shadow(0px 0px 20px #8bff00);
+}
+
+.messageSent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .hr {
     border: 0.1rem solid transparent;
 }
