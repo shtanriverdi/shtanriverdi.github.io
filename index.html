@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Süha Tanrıverdi</title>
+    <!-- Remove fav.ico error -->
+    <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="app.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap"
@@ -306,6 +308,13 @@
 
         <section id="contact">
             <form action="https://formsubmit.co/shtanriverdi@yahoo.com" method="POST">
+
+                <!-- TODO -->
+                <!-- After they send email
+                 go back to contact section and show a message -->
+                <!-- <input type="hidden" name="_next" value="https://shtanriverdi.github.io/#contact"> -->
+
+                <input type="hidden" name="_captcha" value="false">
                 <h2>Contact</h2>
                 <p>If you would like to talk about anything with me, please do so:</p>
                 <div class="contactContainer flex">
@@ -320,7 +329,7 @@
                 </div>
                 <div class="pad-b">
                     <label for="message">Message:</label>
-                    <textarea class="input-corner pd-input msg w-f" id="message" type="text"
+                    <textarea name="message" class="input-corner pd-input msg w-f" id="message" type="text"
                         placeholder="Hey there! I would like to..."></textarea>
                 </div>
                 <div>
