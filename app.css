@@ -1,0 +1,362 @@
+/* Süha Tanrıverdi. September, 2023 */
+html {
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 1.15rem;
+    scroll-behavior: smooth;
+}
+
+input,
+textarea {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.hr {
+    border: 0.1rem solid transparent;
+}
+
+body {
+    background: linear-gradient(135deg, #e3f7ff, #ffe1b4);
+    margin: 0 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galleryContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+
+.previewContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#preview {
+    display: none;
+}
+
+.galleryPic {
+    width: 200px;
+    height: 140px;
+    margin: 0.5%;
+    border-radius: 15px;
+    object-fit: cover;
+    user-select: none;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #ff950038;
+}
+
+.previewPic {
+    width: 800px;
+    height: 446.4px;
+    border-radius: 15px;
+    object-fit: cover;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 0rem 0rem 0.3rem 0.2rem #ff9500;
+}
+
+.galleryPic:hover {
+    opacity: 0.8;
+    width: 200px;
+    height: 140px;
+    margin: 0.5%;
+    border-radius: 15px;
+    object-fit: cover;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0rem 0rem 0.3rem 0.2rem #ff9500;
+}
+
+.input-corner {
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.width {
+    max-width: 48rem;
+}
+
+/* Create global variable */
+:root {
+    --radius: 50%;
+    --linkColor: #0b4458;
+}
+
+.introLink {
+    color: var(--linkColor);
+}
+
+.resumeContainer {
+    user-select: none;
+}
+
+.introContainer>.child p {
+    margin: 1% 0;
+}
+
+.introContainer>.pad-v p {
+    margin: 2% 0;
+}
+
+p,
+label {
+    color: #042632;
+}
+
+b {
+    color: #0b4458;
+}
+
+.fs-xl {
+    font-size: x-large;
+}
+
+.fs-cs {
+    font-size: 1.6rem;
+}
+
+.fs-xxl {
+    font-size: xx-large;
+}
+
+section {
+    padding-bottom: 5rem;
+    scroll-margin-top: 6rem;
+    transition: 1s all ease-out;
+}
+
+::selection {
+    background: #ffc28c;
+}
+
+.sendBtn {
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc8a0;
+    border-radius: 15px;
+    border: 1px solid #969696;
+    width: 6rem;
+    height: 2rem;
+    float: right;
+}
+
+.sendBtn:hover {
+    justify-content: center;
+    align-items: center;
+    background-color: #ffa666;
+    border-radius: 15px;
+    border: 0.5px solid #ff822a;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #ff540059;
+    width: 6rem;
+    height: 2rem;
+    float: right;
+}
+
+.sendBtn:active {
+    justify-content: center;
+    align-items: center;
+    background-color: #ff8832;
+    border-radius: 15px;
+    border: 0.5px solid #ff822a;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #ff540059;
+    width: 6rem;
+    height: 2rem;
+    float: right;
+}
+
+.f-centerize {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.w-f {
+    width: 100%;
+}
+
+
+.link {
+    user-select: none;
+    color: #0b4458;
+    /* text-decoration: underline; */
+}
+
+.pad-r {
+    padding-right: 2%;
+}
+
+.pad-b {
+    padding-bottom: 2%;
+}
+
+.pad-t {
+    padding-top: 2%;
+}
+
+h2 {
+    font-size: xx-large;
+    font-weight: 400;
+    user-select: none;
+    color: #0b4458;
+}
+
+h3 {
+    font-size: larger;
+    font-weight: 400;
+    user-select: none;
+    color: #0b4458;
+    margin: 2% 0;
+}
+
+h4 {
+    font-size: large;
+    font-weight: 400;
+    user-select: none;
+    color: #0b4458;
+    margin: 1% 0;
+}
+
+nav ul a {
+    font-weight: 300;
+    /* user-select: none; */
+}
+
+nav>div {
+    display: flex;
+    justify-content: space-between;
+    min-width: 48rem;
+}
+
+a {
+    /*    font-weight: bold;*/
+    text-decoration: none;
+    color: #240e01;
+    user-select: none;
+}
+
+li {
+    list-style-type: none;
+    /*	display: inline-block;*/
+}
+
+ul {
+    /*	text-align: center;*/
+    /*According to W3C Standard, 
+<ul> elements by default have a padding-inline-start: 40px. 
+This accounted for the 40px of left padding.*/
+    padding-left: 0;
+    margin: 0;
+    /*	When you are applying text-align: center; 
+to an element, it will align the element’s text
+(or content) to the center 
+only if the element is a block-level element 
+such as a div, paragraph, list, etc.*/
+}
+
+#profilePicContainer {
+    padding-right: 1.8rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.main {
+    justify-content: center;
+    padding: 6rem 0;
+    /*    text-align: justify;*/
+    width: 48rem;
+    flex-direction: column;
+}
+
+.link {
+    color: var(--linkColor);
+    font-weight: bold;
+}
+
+.rounded {
+    border-radius: var(--radius);
+}
+
+.flex {
+    display: flex;
+}
+
+.aboutSection {
+    justify-content: center;
+    align-items: center;
+}
+
+.st {
+    flex: 1;
+    font-weight: bold;
+}
+
+.navMenu {
+    gap: 3rem;
+}
+
+.profilePic {
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #add3e682;
+    /*	object-fit: cover;*/
+    max-height: 200px;
+}
+
+.nav {
+    background: #ffd79c7a;
+    /*	background: linear-gradient(135deg, #ffe1b4, #e3f7ff);*/
+    backdrop-filter: blur(0.3rem);
+    /*    box-shadow: 0rem 0rem 0.01rem 0.04rem #f2f2f2;*/
+    min-height: 3rem;
+    min-width: 100vw;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    /* 
+	When padding is added to an element 
+	with a width or a height of 100% 
+	it causes that element to overflow. 
+	It’s no surprise since padding creates 
+	extra space within an element.
+	This padding will cause overflow
+	That's why we can use box-sizing
+	To force inside
+	*/
+    /* The default value of the box-sizing property is content-box, 
+	but when we set it to border-box 
+	this will make the element’s padding 
+	and border to also be included in its width and height.
+	*/
+    box-sizing: border-box;
+    z-index: 1;
+    /*    padding: 0 20%;*/
+}
+
+.footer {
+    justify-content: center;
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+.msg {
+    height: 6rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.pd-input {
+    padding: 2%;
+    box-sizing: border-box;
+}
