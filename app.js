@@ -2,7 +2,7 @@
 const images = document.querySelectorAll('#galleryPic');
 const pitures = document.querySelector('#pitures');
 const preview = document.querySelector('#preview');
-const emailSection = document.querySelector('#send-email');
+const emailSection = document.querySelector('#message-sent');
 const body = document.body;
 let flag = true;
 
@@ -21,7 +21,7 @@ body.addEventListener('click', (e) => {
 });
 
 emailSection.addEventListener('submit', (e) => {
-    emailSection.style.display = 'flex';
+    emailSection.style.display = 'flex'
 });
 
 function handleClick(image) {
