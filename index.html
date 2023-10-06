@@ -305,13 +305,7 @@
         </section>
 
         <section id="contact">
-            <form id="send-email" action="https://formsubmit.co/shtanriverdi@yahoo.com" method="POST">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://shtanriverdi.github.io/#contact">
-                <!-- Webhook -->
-                <!-- TODO -->
-                <input type="hidden" name="_webhook" value="https://yourdomain.co/your-webhook">
-
+            <form action="https://getform.io/f/8c81cb4b-0a95-464d-a746-11a5d47420f5" method="POST">
                 <h2>Contact</h2>
                 <p>If you would like to talk about anything with me, please do so:</p>
                 <div class="contactContainer flex">
@@ -328,7 +322,7 @@
                 </div>
                 <div class="pad-b">
                     <label for="message">Message:</label>
-                    <textarea name="message" class="input-corner pd-input msg w-f" id="message" type="text"
+                    <textarea class="input-corner pd-input msg w-f" id="message" type="text" name="message"
                         placeholder="Hey there! I would like to..."></textarea>
                 </div>
                 <div>
@@ -338,7 +332,14 @@
                         </svg>&nbsp;Send
                     </button>
                 </div>
+                <!-- add hidden Honeypot input to prevent spams -->
+                <input type="hidden" name="_gotcha" style="display:none !important">
             </form>
+            <!-- <form action="https://getform.io/f/8c81cb4b-0a95-464d-a746-11a5d47420f5" method="POST">
+                <input type="text" name="name">
+                <input type="email" name="email">
+                <input type="text" name="message">
+            </form> -->
         </section>
 
         <section id="message-sent" class="messageSent">
