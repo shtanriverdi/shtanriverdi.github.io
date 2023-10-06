@@ -2,6 +2,7 @@
 const images = document.querySelectorAll('#galleryPic');
 const pitures = document.querySelector('#pitures');
 const preview = document.querySelector('#preview');
+const emailSection = document.querySelector('#send-email');
 const body = document.body;
 let flag = true;
 
@@ -17,6 +18,10 @@ body.addEventListener('click', (e) => {
         preview.style.display = 'none';
         flag = !flag;
     }
+});
+
+emailSection.addEventListener('submit', (e) => {
+    emailSection.style.display = 'flex';
 });
 
 function handleClick(image) {

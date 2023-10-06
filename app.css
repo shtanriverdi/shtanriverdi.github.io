@@ -27,7 +27,7 @@ textarea {
 }
 
 .messageSent {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -176,6 +176,7 @@ section {
     width: 6rem;
     height: 2rem;
     float: right;
+    cursor: pointer;
 }
 
 .sendBtn:active {
@@ -188,6 +189,7 @@ section {
     width: 6rem;
     height: 2rem;
     float: right;
+    cursor: pointer;
 }
 
 .f-centerize {
